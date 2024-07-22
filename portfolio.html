@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadlamudi Tejasvi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <img src="PASSPORTSIZE PHOTO.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1 class="typewriter"></h1>
+            <p>Passionate about web development</p>
+            <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+        <div id="particles-js"></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello everyone! I'm Vadlamudi Tejasvi, a dedicated Computer Science and Engineering student at SRM University. I have a deep passion for web development and graphic design, constantly seeking to innovate and explore new technologies. I thrive on finding creative solutions to complex problems, and I'm always eager to learn and grow in the ever-evolving tech landscape.</p>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>College</th>
+                    <th>Graduation</th>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>V V Central Public School</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>Sri Srinivasa Gravity Inter Junior College</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>BTech</td>
+                    <td>SRM University Andhra Pradesh</td>
+                    <td>2026</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="skills" class="section-content">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+            <p>C</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>C++</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>Python</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>HTML</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>CSS</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>JavaScript</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>ATM Project</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>This project is about an ATM system implemented in C.</p>
+                            <a href="atm c project.c" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Hotel Management</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>This project is about a Hotel Management system implemented in C++.</p>
+                            <a href="Hotel Management C++.pdf" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Travel Agency Feedback</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>This project is a web application for collecting travel agency feedback.</p>
+                            <a href="PROJECT.HTML" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="Vadlamudi Tejasvi Resume.pdf" class="download-button">Download Resume</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Vadlamudi Tejasvi. All rights reserved.</p>
+    </footer>
+    <button class="top-button" onclick="scrollToTop()">Top</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Feedback Form</title>
+    <style>
+header{
+font-family:lucida calligraphy;
+background-color:orange;
+padding:30px;
+}
+                body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: #F5EEE6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Feedback Form</h1></header>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <p><label for="emailInput">Enter your email id:</label>
+<input type="text" id="emailInput" placeholder="email" oninput="validate(this, /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[\w-]{2,4}$/, 'emailError', 'emailCorrect')" required />
+  <span class="error" id="emailError"></span><br></p>
+<label for="phone">Your Phone Number:</label>
+            <input type="number" id="phone" name="phone">
+
+            <p> How is the overall experience ?<br>
+                <div>
+                    <input type="radio" id="depth1" name="depth1" value="Worst">Worst
+                    <input type="radio" id="depth2" name="depth1" value="Fair">Fair
+                    <input type="radio" id="depth3" name="depth1" value="Good">Good
+                    <input type="radio" id="depth4" name="depth1" value="Best" required >Best
+                </div>
+            </p>
+            <p> How is the customer service?<br>
+                <div>
+                    <input type="radio" id="depth5" name="depth2" value="Worst">Worst
+                    <input type="radio" id="depth6" name="depth2" value="Fair">Fair
+                    <input type="radio" id="depth7" name="depth2" value="Good">Good
+                    <input type="radio" id="depth8" name="depth2" value="Best" required >Best
+                </div>
+            </p>
+            <p> How is the trip accommodations?<br>
+                <div>
+                    <input type="radio" id="depth9" name="depth3" value="Worst">Worst
+                    <input type="radio" id="depth10" name="depth3" value="Fair">Fair
+                    <input type="radio" id="depth11" name="depth3" value="Good">Good
+                    <input type="radio" id="depth12" name="depth3" value="Best" required >Best
+                </div>
+            </p>
+            <p> Did the itinerary provided by our agency meet your expectations?<br>
+                <div>
+                    <input type="radio" id="depth13" name="depth4" value="Worst">Worst
+                    <input type="radio" id="depth14" name="depth4" value="Fair">Fair
+                    <input type="radio" id="depth15" name="depth4" value="Good">Good
+                    <input type="radio" id="depth16" name="depth4" value="Best" required >Best
+                </div>
+            </p>
+            <p>Do you feel that the cost of the trip was justifed by the quality of sevices provided?<br>
+                <div>
+                    <input type="radio" id="depth17" name="depth5" value="Yes">Yes
+                    <input type="radio" id="depth18" name="depth5" value="No">No
+                     <p>Were there any issues or delay with the transportation during your trip ?<br>
+                <div>
+                    <input type="radio" id="depth19" name="depth6" value="Yes">Yes
+                    <input type="radio" id="depth20" name="depth6" value="No" required>No
+
+                                    </div>
+            </p>
+<p>How would you rate the quality and knowladge of the tour guide provided during the trip?<br>
+                <div>
+                    <input type="radio" id="depth21" name="depth7" value="Worst">Worst
+                    <input type="radio" id="depth22" name="depth7" value="Fair">Fair
+                    <input type="radio" id="depth23" name="depth7" value="Good">Good
+                    <input type="radio" id="depth24" name="depth7" value="Best" required >Best
+                </div>
+            </p>
+<p>Were you adequately informed about any changes or updates to your travel plans?
+<br>
+                <div>
+                    <input type="radio" id="depth25" name="depth8" value="Yes">Yes
+                    <input type="radio" id="depth26" name="depth8" value="No" required>No
+                                    </div>
+            </p>
+<p>Were there any concerns regarding safety or security measures during your travels?
+
+<br>
+                <div>
+                    <input type="radio" id="depth27" name="depth9" value="Yes">Yes
+                    <input type="radio" id="depth28" name="depth9" value="No" required>No
+                                    </div>
+            </p>
+
+<p>Would you consider rebooking with us for your future trip?
+<br>
+                <div>
+                    <input type="radio" id="depth29" name="depth10" value="Yes">Yes
+                    <input type="radio" id="depth30" name="depth10" value="No">No
+                                    </div>
+            </p>
+
+
+
+<label for="message">Additional Comments</label>
+            <textarea id="message" name="message" required></textarea>
+                </div><center>
+            <input type="submit" value="Submit Feedback"></center>
+
+        </form>
+    </div>
+</body>
+</html>
+
+           
+
